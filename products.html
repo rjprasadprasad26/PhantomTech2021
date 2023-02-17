@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&copy;Phantom Technology</title>
+    <link rel="stylesheet" href="rj1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/71ffe23c5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>                
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li> 
+                    <li><a href="contactus.html">CONTACT US</a></li>                    
+                </ul>                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Products</h1>            
+    </section>
+
+    <!---- Products ----->
+
+    <section class="pro-us">
+        <div class="row">
+            <div class="pro-col">
+                <h1>India's largest PC parts retailer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo aperiam, sit expedita architecto repellendus distinctio molestias consequatur iste incidunt veritatis placeat sed, dignissimos velit, tenetur deleniti quasi vel ex aut excepturi nesciunt eos corrupti non. Quisquam laboriosam nobis dolorum non. Ipsam dolorem nam architecto vitae tempora repellat iure.</p>
+                <a href="contactus.html" class="hero-btn red-btn">Contact Us</a>
+            </div>
+            <div class="pro-col">
+                <img src="images/rgb1.jpg">
+            </div>
+        </div>            
+    </section>
+
+    <!---- About Us ----->
+
+    <footer class="About-Us">
+        <h4>About Us</h4>
+        <p>PhanTOM Technology is very passionate about video games. We provide product and services for better gaming
+            experience. Founded in 2021 and <br>headquatered in Darjeeling, India with additional offices in Kolkata,
+            Mumbai, New Delhi & Bangalore <br>is 100% founder-owned and highly customer centric.</p>
+
+        <div class="icons">            
+            <a href="https://www.facebook.com/raj.prasad2"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://twitter.com/RajKuma85476799"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/steel_wolf20"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raj-prasad-2930a21a8"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/user/hibernet24"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>&copy; PhanTOM Technology <span id="currentYear"></span><i class="fa fa-gamepad"></i></p>
+        
+    </footer>
+
+    <!-- javascript -->
+    
+    <script>
+        //for mobile side menu with collaspable option
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        }
+        //till here
+
+        //for footer copyrite year automate udpate 
+        const year = new Date().getFullYear();
+        const currentYearElement = document.getElementById('currentYear');
+        currentYearElement.textContent = year;
+        //till here
+    </script>
+</body>
+</html>

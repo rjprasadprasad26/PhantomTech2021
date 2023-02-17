@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&copy;Phantom Technology</title>
+    <link rel="stylesheet" href="rj1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/71ffe23c5f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header3">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png"></a>                
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li> 
+                    <li><a href="contactus.html">CONTACT US</a></li>                    
+                </ul>                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>            
+    </section>
+
+    <!---- Contact Us ----->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7109.980436720997!2d88.16226835553972!3d26.998859192271222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5d2caeeb57dab%3A0xd33f47035a8e96f2!2sSukhia%20Pokhari%2C%20West%20Bengal%20734221!5e0!3m2!1sen!2sin!4v1626992064661!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>ABC Road, WXY Building</h5>
+                        <p>Sukhia, Darjeeling, West Bengal, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 7278 440 770</h5>
+                        <p>Monday - Saturday - 10:00 AM - 06:00 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>support@phantech.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>             
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <input type="text" placeholder="Enter Subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!---- About Us ----->
+
+    <footer class="About-Us">
+        <h4>About Us</h4>
+        <p>PhanTOM Technology is very passionate about video games. We provide product and services for better gaming
+            experience. Founded in 2021 and <br>headquatered in Darjeeling, India with additional offices in Kolkata,
+            Mumbai, New Delhi & Bangalore <br>is 100% founder-owned and highly customer centric.</p>
+
+        <div class="icons">            
+            <a href="https://www.facebook.com/raj.prasad2"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://twitter.com/RajKuma85476799"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/steel_wolf20"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/raj-prasad-2930a21a8"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/user/hibernet24"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>&copy; PhanTOM Technology <span id="currentYear"></span><i class="fa fa-gamepad"></i></p>
+    </p>
+</footer>
+
+<!-- javascript -->
+
+<script>
+    //for mobile side menu with collaspable option
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+    navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+    navLinks.style.right = "-200px";
+    }
+    //till here
+
+    //for footer copyrite year automate udpate 
+    const year = new Date().getFullYear();
+    const currentYearElement = document.getElementById('currentYear');
+    currentYearElement.textContent = year;
+    //till here
+</script>
+</body>
+</html>
